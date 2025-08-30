@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://techvibe.com/">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <title>Mohamed Ali - CEO of TechVibe Solutions | Web Developer & Digital Solutions Expert</title>
+    <meta name="description" content="Mohamed Ali - CEO and expert web developer at TechVibe Solutions. Custom websites, mobile apps, graphic design, and digital marketing. Transform your business with Mohamed Ali's leadership and creative tech expertise.">
+    <meta name="author" content="Mohamed Ali">
+    <meta name="keywords" content="Mohamed Ali, web developer, digital solutions, website development, mobile apps, graphic design, digital marketing, TechVibe Solutions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techvibe.com/">
+    <meta property="og:title" content="Mohamed Ali - CEO of TechVibe Solutions | Web Developer & Digital Solutions Expert">
+    <meta property="og:description" content="Mohamed Ali - CEO and expert web developer at TechVibe Solutions. Custom websites, mobile apps, graphic design, and digital marketing.">
+    <meta property="og:image" content="https://techvibe.com/mohamed-ali-profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://techvibe.com/">
+    <meta property="twitter:title" content="Mohamed Ali - CEO of TechVibe Solutions | Web Developer & Digital Solutions Expert">
+    <meta property="twitter:description" content="Mohamed Ali - CEO and expert web developer at TechVibe Solutions. Custom websites, mobile apps, graphic design, and digital marketing.">
+    <meta property="twitter:image" content="https://techvibe.com/mohamed-ali-profile.jpg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohamed Ali",
+        "jobTitle": "CEO & Lead Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "TechVibe Solutions"
+        },
+        "description": "CEO and expert web developer with expertise in custom websites, mobile apps, graphic design, and digital marketing. Leading TechVibe Solutions to deliver innovative digital solutions.",
+        "url": "https://techvibe.com",
+        "sameAs": [
+            "https://linkedin.com/in/mohamed-ali-techvibe",
+            "https://github.com/mohamed-ali-techvibe"
+        ],
+        "knowsAbout": [
+            "Web Development",
+            "Mobile App Development", 
+            "Graphic Design",
+            "Digital Marketing",
+            "SEO Optimization",
+            "Programming Systems",
+            "Business Leadership",
+            "Strategic Planning"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TechVibe Solutions",
+        "founder": {
+            "@type": "Person",
+            "name": "Mohamed Ali"
+        },
+        "employee": {
+            "@type": "Person",
+            "name": "Mohamed Ali",
+            "jobTitle": "CEO"
+        },
+        "description": "Empowering brands with innovative technology and creative design solutions.",
+        "url": "https://techvibe.com",
+        "logo": "https://techvibe.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "email": "hello@techvibe.com"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+      
+
+        :root {
+            --primary-color: #00d9ff;
+            --secondary-color: #ff6b35;
+            --dark-bg: #0a0a0a;
+            --dark-secondary: #1a1a1a;
+            --text-light: #ffffff;
+            --text-gray: #b0b0b0;
+            --gradient: linear-gradient(135deg, #00d9ff 0%, #ff6b35 100%);
+            --gradient-dark: linear-gradient(135deg, rgba(0,217,255,0.1) 0%, rgba(255,107,53,0.1) 100%);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Language Toggle Button */
+        .language-toggle {
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .language-toggle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            transition: left 0.3s ease;
+        }
+
+        .language-toggle:hover::before {
+            left: 100%;
+        }
+
+        .language-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
+        }
+
+        /* RTL Support for Arabic */
+        [dir="rtl"] {
+            direction: rtl;
+            text-align: right;
+        }
+
+        [dir="rtl"] .nav-links {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .language-toggle {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
+
+        [dir="rtl"] .hero-content {
+            text-align: right;
+        }
+
+        [dir="rtl"] .section-title {
+            text-align: center;
+        }
+
+        [dir="rtl"] .service-card,
+        [dir="rtl"] .benefit-item {
+            text-align: center;
+        }
+
+        [dir="rtl"] .portfolio-content {
+            text-align: right;
+        }
+
+        [dir="rtl"] .footer-content {
+            text-align: right;
+        }
+
+        [dir="rtl"] .cta {
+            text-align: center;
+        }
+
+        [dir="rtl"] .portfolio-tags {
+            justify-content: flex-end;
+        }
+
+        [dir="rtl"] .portfolio-link {
+            text-align: right;
+        }
+
+        /* Arabic font support */
+        [dir="rtl"] body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* RTL specific spacing adjustments */
+        [dir="rtl"] .nav-container {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .footer-section {
+            text-align: right;
+        }
+
+        [dir="rtl"] .social-links {
+            justify-content: flex-end;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--dark-bg);
+        }
+
+        /* Background Video */
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(0, 217, 255, 0.2) 50%, rgba(255, 107, 53, 0.2) 100%);
+            z-index: 1;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-intro {
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-name {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 10px rgba(0, 217, 255, 0.3);
+        }
+
+        .hero-title {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero .highlight {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.5);
+        }
+
+        /* Video overlay animation */
+        @keyframes videoPulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 0.9; }
+        }
+
+        .hero-video {
+            animation: videoPulse 4s ease-in-out infinite;
+        }
+
+        /* Video fallback for unsupported browsers */
+        .video-fallback {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+            z-index: 0;
+        }
+
+        /* Enhanced video effects */
+        .hero-video::-webkit-media-controls {
+            display: none !important;
+        }
+
+        .hero-video::-webkit-media-controls-panel {
+            display: none !important;
+        }
+
+        .hero-video::-webkit-media-controls-play-button {
+            display: none !important;
+        }
+
+        .hero-video::-webkit-media-controls-start-playback-button {
+            display: none !important;
+        }
+
+        /* Loading animation for video */
+        .hero-video:not([src]) {
+            background: linear-gradient(45deg, #0a0a0a, #1a1a1a, #0a0a0a);
+            background-size: 200% 200%;
+            animation: loadingGradient 2s ease infinite;
+        }
+
+        @keyframes loadingGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--gradient);
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            right: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            right: 20%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 80%;
+            right: 5%;
+            animation-delay: 4s;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background: var(--dark-secondary);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--dark-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 5rem 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-item p {
+            color: var(--text-gray);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 5rem 0;
+            background: var(--dark-secondary);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-item {
+            background: var(--dark-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-image {
+            height: 200px;
+            background: var(--gradient);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .portfolio-content {
+            padding: 2rem;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-content p {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(0, 217, 255, 0.2);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            transition: left 0.5s ease;
+        }
+
+        .portfolio-link:hover::before {
+            left: 100%;
+        }
+
+        .portfolio-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 217, 255, 0.3);
+        }
+
+        .portfolio-link i {
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+        }
+
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            text-align: center;
+        }
+
+        .testimonial-item {
+            background: var(--dark-secondary);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: var(--text-gray);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+        }
+
+        .testimonial-company {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        /* Call to Action Section */
+        .cta {
+            padding: 5rem 0;
+            background: var(--gradient);
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button-white {
+            background: white;
+            color: var(--dark-bg);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-bg);
+            padding: 3rem 0 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-gray);
+            text-decoration: none;
+            line-height: 2;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .founder-info {
+            color: var(--primary-color) !important;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-gray);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-container,
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-video {
+                object-position: center;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">TechVibe</a>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="#portfolio" data-en="Portfolio" data-ar="الأعمال">Portfolio</a></li>
+                <li><a href="#about" data-en="About" data-ar="من نحن">About</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+            </ul>
+            <button class="language-toggle" onclick="toggleLanguage()">
+                <span class="lang-text" data-en="العربية" data-ar="English">العربية</span>
+            </button>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+            <!-- Fallback for browsers that don't support video -->
+            <div class="video-fallback"></div>
+        </video>
+        
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-intro">
+                    <span class="hero-name" data-en="Mohamed Ali" data-ar="محمد علي">Mohamed Ali</span>
+                    <span class="hero-title" data-en="CEO & Lead Developer" data-ar="الرئيس التنفيذي والمطور الرئيسي">CEO & Lead Developer</span>
+                </div>
+                <h1 data-en="Empowering Brands with" data-ar="تمكين العلامات التجارية بـ">Empowering Brands with <span class="highlight" data-en="Tech & Creativity" data-ar="التكنولوجيا والإبداع">Tech & Creativity</span></h1>
+                <p data-en="Transform your digital presence with cutting-edge solutions. Mohamed Ali crafts custom websites, mobile apps, and digital strategies that drive results and captivate audiences." data-ar="حول وجودك الرقمي بحلول متطورة. محمد علي يصمم مواقع ويب مخصصة وتطبيقات جوال واستراتيجيات رقمية تحقق النتائج وتجذب الجماهير.">Transform your digital presence with cutting-edge solutions. Mohamed Ali crafts custom websites, mobile apps, and digital strategies that drive results and captivate audiences.</p>
+                <a href="#contact" class="cta-button" data-en="Get a Free Quote" data-ar="احصل على عرض سعر مجاني">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-en="Our" data-ar="خدماتنا">Our <span class="highlight" data-en="Services" data-ar="الخدمات">Services</span></h2>
+                <p data-en="Comprehensive digital solutions tailored to elevate your business and create meaningful connections with your audience." data-ar="حلول رقمية شاملة مصممة لرفع مستوى عملك وإنشاء روابط هادفة مع جمهورك.">Comprehensive digital solutions tailored to elevate your business and create meaningful connections with your audience.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-en="Website Development" data-ar="تطوير المواقع الإلكترونية">Website Development</h3>
+                    <p data-en="Custom websites, CMS solutions, and e-commerce platforms built with modern technologies and optimized for performance." data-ar="مواقع ويب مخصصة وحلول إدارة المحتوى ومنصات التجارة الإلكترونية مبنية بأحدث التقنيات ومحسنة للأداء.">Custom websites, CMS solutions, and e-commerce platforms built with modern technologies and optimized for performance.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-en="Mobile App Development" data-ar="تطوير تطبيقات الجوال">Mobile App Development</h3>
+                    <p data-en="Native iOS and Android apps, cross-platform solutions that deliver exceptional user experiences across all devices." data-ar="تطبيقات iOS وAndroid الأصلية وحلول متعددة المنصات توفر تجارب مستخدم استثنائية عبر جميع الأجهزة.">Native iOS and Android apps, cross-platform solutions that deliver exceptional user experiences across all devices.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 data-en="Programming Systems" data-ar="أنظمة البرمجة">Programming Systems</h3>
+                    <p data-en="Custom ERP, CRM, and booking systems designed to streamline your business operations and boost productivity." data-ar="أنظمة ERP وCRM وحجز مخصصة مصممة لتبسيط عمليات عملك وتعزيز الإنتاجية.">Custom ERP, CRM, and booking systems designed to streamline your business operations and boost productivity.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-en="Graphic Design" data-ar="التصميم الجرافيكي">Graphic Design</h3>
+                    <p data-en="Compelling visual identities, logos, brand kits, and social media designs that make your brand unforgettable." data-ar="هويات بصرية مقنعة وشعارات ومجموعات العلامة التجارية وتصاميم وسائل التواصل الاجتماعي التي تجعل علامتك التجارية لا تُنسى.">Compelling visual identities, logos, brand kits, and social media designs that make your brand unforgettable.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 data-en="SEO Optimization" data-ar="تحسين محركات البحث">SEO Optimization</h3>
+                    <p data-en="Technical SEO, content optimization, and analytics to improve your search rankings and drive organic traffic." data-ar="تحسين محركات البحث التقني وتحسين المحتوى والتحليلات لتحسين ترتيب البحث وجذب الزيارات العضوية.">Technical SEO, content optimization, and analytics to improve your search rankings and drive organic traffic.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</h3>
+                    <p data-en="Google Ads, Facebook campaigns, and email marketing strategies that convert visitors into loyal customers." data-ar="إعلانات Google وحملات Facebook واستراتيجيات التسويق عبر البريد الإلكتروني التي تحول الزوار إلى عملاء مخلصين.">Google Ads, Facebook campaigns, and email marketing strategies that convert visitors into loyal customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-en="Why Choose" data-ar="لماذا تختار">Why Choose <span class="highlight" data-en="TechVibe" data-ar="تيك فايب">TechVibe</span></h2>
+                <p data-en="We combine technical expertise with creative vision to deliver solutions that exceed expectations." data-ar="نجمع بين الخبرة التقنية والرؤية الإبداعية لتقديم حلول تتجاوز التوقعات.">We combine technical expertise with creative vision to deliver solutions that exceed expectations.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 data-en="Custom Solutions" data-ar="حلول مخصصة">Custom Solutions</h3>
+                    <p data-en="Every project is tailored to your unique needs and business goals." data-ar="كل مشروع مصمم خصيصاً لاحتياجاتك الفريدة وأهداف عملك.">Every project is tailored to your unique needs and business goals.</p>
+                </div>
+                
+                <div class="benefit-item fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 data-en="Fast Delivery" data-ar="تسليم سريع">Fast Delivery</h3>
+                    <p data-en="Quick turnaround times without compromising on quality or attention to detail." data-ar="أوقات تسليم سريعة دون المساس بالجودة أو الاهتمام بالتفاصيل.">Quick turnaround times without compromising on quality or attention to detail.</p>
+                </div>
+                
+                <div class="benefit-item fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-en="Creative Team" data-ar="فريق إبداعي">Creative Team</h3>
+                    <p data-en="Passionate designers and developers dedicated to bringing your vision to life." data-ar="مصممين ومطورين متحمسين متخصصين في إحياء رؤيتك.">Passionate designers and developers dedicated to bringing your vision to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 data-en="Featured" data-ar="مشاريع">Featured <span class="highlight" data-en="Projects" data-ar="مميزة">Projects</span></h2>
+                <p data-en="Discover some of our most impactful work across various industries and platforms." data-ar="اكتشف بعض من أكثر أعمالنا تأثيراً عبر مختلف الصناعات والمنصات.">Discover some of our most impactful work across various industries and platforms.</p>
+            </div>
+            
+            <div class="portfolio-grid">
+           
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="UGotBox - Subscription Box Platform" data-ar="يو جوت بوكس - منصة صناديق الاشتراك">UGotBox - Subscription Box Platform</h3>
+                        <p data-en="Modern subscription box platform with user management, product catalog, subscription management, and payment processing. Features include customer dashboard, admin panel, and automated billing system." data-ar="منصة صناديق اشتراك حديثة مع إدارة المستخدمين وكتالوج المنتجات وإدارة الاشتراكات ومعالجة المدفوعات. تتضمن لوحة تحكم العملاء ولوحة الإدارة ونظام الفوترة الآلي.">Modern subscription box platform with user management, product catalog, subscription management, and payment processing. Features include customer dashboard, admin panel, and automated billing system.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <a href="https://www.ugotbox.com/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="Live Agent Platform" data-ar="منصة العملاء المباشرين">Live Agent Platform</h3>
+                        <p data-en="Customer service platform with real-time chat, analytics dashboard, and team collaboration tools for enhanced customer support." data-ar="منصة خدمة العملاء مع الدردشة المباشرة ولوحة التحليلات وأدوات التعاون الجماعي لتعزيز دعم العملاء.">Customer service platform with real-time chat, analytics dashboard, and team collaboration tools for enhanced customer support.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <a href="https://chocolate-louse-765403.hostingersite.com/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="Real Estate Platform" data-ar="منصة العقارات">Real Estate Platform</h3>
+                        <p data-en="Modern real estate website with property listings, search functionality, and interactive property showcase features." data-ar="موقع عقاري حديث مع قوائم العقارات ووظيفة البحث وميزات عرض العقارات التفاعلية.">Modern real estate website with property listings, search functionality, and interactive property showcase features.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                        <a href="https://real-estate-one-lake.vercel.app/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="Author Portfolio Website" data-ar="موقع الكاتب الشخصي">Author Portfolio Website</h3>
+                        <p data-en="Personal website for author Habiba Saaed featuring book showcases, blog section, and social media integration." data-ar="موقع شخصي للكاتبة حبيبة سعيد يعرض الكتب وقسم المدونة وتكامل وسائل التواصل الاجتماعي.">Personal website for author Habiba Saaed featuring book showcases, blog section, and social media integration.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://lightblue-mantis-364733.hostingersite.com/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="E-Commerce Platform - البركة" data-ar="منصة التجارة الإلكترونية - البركة">E-Commerce Platform - البركة</h3>
+                        <p data-en="Arabic e-commerce website for packaging and packaging materials with product catalog, cart functionality, and payment integration." data-ar="موقع تجارة إلكترونية عربي للتغليف ومواد التغليف مع كتالوج المنتجات ووظيفة السلة وتكامل الدفع.">Arabic e-commerce website for packaging and packaging materials with product catalog, cart functionality, and payment integration.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Arabic RTL</span>
+                        </div>
+                        <a href="https://mocoder.io/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="Designer Portfolio" data-ar="ملف المصمم الشخصي">Designer Portfolio</h3>
+                        <p data-en="Creative portfolio website for graphic designer Amar Alaa showcasing design works, experience, and client testimonials." data-ar="موقع ملف شخصي إبداعي للمصمم الجرافيكي عمار علاء يعرض أعمال التصميم والخبرة وشهادات العملاء.">Creative portfolio website for graphic designer Amar Alaa showcasing design works, experience, and client testimonials.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">jQuery</span>
+                        </div>
+                        <a href="https://palegoldenrod-cassowary-961559.hostingersite.com/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-image">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-en="Builder Preview Platform" data-ar="منصة معاينة الباني">Builder Preview Platform</h3>
+                        <p data-en="Website builder preview system allowing clients to preview their websites before going live with customization options." data-ar="نظام معاينة باني المواقع يتيح للعملاء معاينة مواقعهم قبل الإطلاق مع خيارات التخصيص.">Website builder preview system allowing clients to preview their websites before going live with customization options.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Builder.com</span>
+                            <span class="tag">Preview</span>
+                            <span class="tag">CMS</span>
+                        </div>
+                        <a href="https://mocoder-io-215270.builder-preview.com/" target="_blank" class="portfolio-link" data-en="View Project" data-ar="عرض المشروع">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>What Our <span class="highlight">Clients Say</span></h2>
+            </div>
+            
+            <div class="testimonial-slider fade-in">
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"TechVibe transformed our online presence completely. Their attention to detail and creative approach exceeded all our expectations. Our conversion rates increased by 300% within the first month!"</p>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-company">CEO, InnovateCorp</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2 data-en="Ready to Transform Your Digital Presence?" data-ar="هل أنت مستعد لتحويل وجودك الرقمي؟">Ready to Transform Your Digital Presence?</h2>
+            <p data-en="Ready to transform your digital presence? Get in touch for a free consultation and discover how we can elevate your brand." data-ar="هل أنت مستعد لتحويل وجودك الرقمي؟ تواصل معنا للحصول على استشارة مجانية واكتشف كيف يمكننا رفع مستوى علامتك التجارية.">Ready to transform your digital presence? Get in touch for a free consultation and discover how we can elevate your brand.</p>
+            <a href="#contact" class="cta-button-white" data-en="Start Your Project" data-ar="ابدأ مشروعك">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="TechVibe Solutions" data-ar="تيك فايب سوليوشنز">TechVibe Solutions</h3>
+                    <p data-en="Founded and led by Mohamed Ali - Empowering brands with innovative technology and creative design solutions." data-ar="أسسها ويقودها محمد علي - تمكين العلامات التجارية بتقنيات مبتكرة وحلول تصميم إبداعية.">Founded and led by Mohamed Ali - Empowering brands with innovative technology and creative design solutions.</p>
+                    <p class="founder-info" data-en="CEO & Lead Developer: Mohamed Ali" data-ar="الرئيس التنفيذي والمطور الرئيسي: محمد علي">CEO & Lead Developer: Mohamed Ali</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Services" data-ar="الخدمات">Services</h3>
+                    <p><a href="#" data-en="Website Development" data-ar="تطوير المواقع الإلكترونية">Website Development</a></p>
+                    <p><a href="#" data-en="Mobile App Development" data-ar="تطوير تطبيقات الجوال">Mobile App Development</a></p>
+                    <p><a href="#" data-en="Graphic Design" data-ar="التصميم الجرافيكي">Graphic Design</a></p>
+                    <p><a href="#" data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Company" data-ar="الشركة">Company</h3>
+                    <p><a href="#" data-en="About Us" data-ar="من نحن">About Us</a></p>
+                
+                    <p><a href="#" data-en="Our Team" data-ar="فريقنا">Our Team</a></p>
+                    <p><a href="#" data-en="Portfolio" data-ar="الأعمال">Portfolio</a></p>
+                    <p><a href="#" data-en="Blog" data-ar="المدونة">Blog</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i>mohamedali.coder@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +20 1020399344</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-en="123 Tech Street, Digital City" data-ar="123 شارع التكنولوجيا، المدينة الرقمية">123 Tech Street, Digital City</span></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-en="&copy; 2025 TechVibe Solutions. All rights reserved. | Privacy Policy | Terms of Service" data-ar="&copy; 2025 تيك فايب سوليوشنز. جميع الحقوق محفوظة. | سياسة الخصوصية | شروط الخدمة">&copy; 2025 TechVibe Solutions. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+        
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Service card hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Parallax effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.floating-element');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = 0.5 + (index * 0.2);
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Dynamic typing effect for hero section
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize animations when page loads
+        window.addEventListener('load', () => {
+            // Add loading animation completion
+            document.body.style.opacity = '1';
+            
+            // Add staggered animation to service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.animationDelay = `${index * 0.1}s`;
+                    card.style.animation = 'fadeInUp 0.6s ease forwards';
+                }, index * 100);
+            });
+        });
+
+        // Interactive cursor effect
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.cursor');
+            if (!cursor) return;
+            
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Form submission handler (for future contact form)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Simulate form submission
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent!';
+                submitBtn.style.background = '#4CAF50';
+                
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                    event.target.reset();
+                }, 3000);
+            }, 2000);
+        }
+
+        // Add click animations to CTA buttons
+        document.querySelectorAll('.cta-button, .cta-button-white').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Testimonial slider functionality
+        const testimonials = [
+            {
+                text: "TechVibe transformed our online presence completely. Their attention to detail and creative approach exceeded all our expectations. Our conversion rates increased by 300% within the first month!",
+                author: "Sarah Johnson",
+                company: "CEO, InnovateCorp"
+            },
+            {
+                text: "Working with TechVibe was an absolute pleasure. They delivered our mobile app ahead of schedule and the user feedback has been phenomenal. Highly recommended!",
+                author: "Michael Chen",
+                company: "Founder, StartupX"
+            },
+            {
+                text: "The team's expertise in both design and development is unmatched. They created a stunning website that perfectly captures our brand identity.",
+                author: "Emma Rodriguez",
+                company: "Marketing Director, BrandCorp"
+            }
+        ];
+
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            const testimonialItem = document.querySelector('.testimonial-item');
+            const testimonial = testimonials[index];
+            
+            testimonialItem.style.opacity = '0';
+            
+            setTimeout(() => {
+                testimonialItem.querySelector('.testimonial-text').textContent = `"${testimonial.text}"`;
+                testimonialItem.querySelector('.testimonial-author').textContent = testimonial.author;
+                testimonialItem.querySelector('.testimonial-company').textContent = testimonial.company;
+                testimonialItem.style.opacity = '1';
+            }, 300);
+        }
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Add scroll progress indicator
+        const scrollProgress = document.createElement('div');
+        scrollProgress.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(135deg, #00d9ff 0%, #ff6b35 100%);
+            z-index: 9999;
+            transition: width 0.3s ease;
+        `;
+        document.body.appendChild(scrollProgress);
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        });
+
+        // Language Toggle Functionality
+        let currentLanguage = 'en'; // Default language
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+            updateLanguage();
+            saveLanguagePreference();
+        }
+
+        function updateLanguage() {
+            const elements = document.querySelectorAll('[data-en][data-ar]');
+            
+            elements.forEach(element => {
+                const text = element.getAttribute(`data-${currentLanguage}`);
+                if (text) {
+                    // Handle elements with HTML content
+                    if (element.innerHTML.includes('<')) {
+                        // For elements with HTML tags, preserve the structure
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = text;
+                        element.innerHTML = tempDiv.innerHTML;
+                    } else {
+                        // For simple text elements
+                        element.textContent = text;
+                    }
+                }
+            });
+
+            // Update button text
+            const langButton = document.querySelector('.lang-text');
+            if (langButton) {
+                langButton.textContent = currentLanguage === 'en' ? 'العربية' : 'English';
+            }
+
+            // Update document direction
+            document.documentElement.setAttribute('dir', currentLanguage === 'ar' ? 'rtl' : 'ltr');
+            
+            // Update document language
+            document.documentElement.setAttribute('lang', currentLanguage);
+
+            // Add smooth transition for language change
+            document.body.style.transition = 'all 0.3s ease';
+            
+            // Trigger reflow for smooth animation
+            setTimeout(() => {
+                document.body.style.transition = '';
+            }, 300);
+        }
+
+        function saveLanguagePreference() {
+            localStorage.setItem('preferredLanguage', currentLanguage);
+        }
+
+        function loadLanguagePreference() {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                currentLanguage = savedLanguage;
+                updateLanguage();
+            }
+        }
+
+        // Load saved language preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLanguagePreference();
+        });
+    </script>
+
+    <style>
+        /* Additional styles for enhanced interactions */
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* Loading animation */
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Enhanced mobile responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                backdrop-filter: blur(20px);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links li {
+                margin: 0.5rem 0;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .floating-element {
+                display: none;
+            }
+
+            .service-card,
+            .portfolio-item {
+                margin: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .service-card,
+            .benefit-item {
+                padding: 1.5rem;
+            }
+
+            .testimonial-item {
+                padding: 2rem 1.5rem;
+            }
+
+            .testimonial-text {
+                font-size: 1rem;
+            }
+        }
+
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus states for better accessibility */
+        .cta-button:focus,
+        .cta-button-white:focus,
+        .nav-links a:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --dark-bg: #000000;
+                --dark-secondary: #111111;
+            }
+        }
+    </style>
+</body>
+</html>
