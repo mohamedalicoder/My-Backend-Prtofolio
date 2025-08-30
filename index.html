@@ -80,6 +80,40 @@
             --gradient-dark: linear-gradient(135deg, rgba(0,217,255,0.1) 0%, rgba(255,107,53,0.1) 100%);
         }
 
+        /* Light Mode Variables */
+        [data-theme="light"] {
+            --primary-color: #0099cc;
+            --secondary-color: #ff6b35;
+            --dark-bg: #ffffff;
+            --dark-secondary: #f8f9fa;
+            --text-light: #2c3e50;
+            --text-gray: #6c757d;
+            --gradient: linear-gradient(135deg, #0099cc 0%, #ff6b35 100%);
+            --gradient-dark: linear-gradient(135deg, rgba(0,153,204,0.1) 0%, rgba(255,107,53,0.1) 100%);
+        }
+
+        /* Light mode specific styles */
+        [data-theme="light"] .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="light"] .hero::before {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(0, 153, 204, 0.1) 50%, rgba(255, 107, 53, 0.1) 100%);
+        }
+
+        [data-theme="light"] .service-card,
+        [data-theme="light"] .portfolio-item,
+        [data-theme="light"] .testimonial-item {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="light"] .service-card:hover,
+        [data-theme="light"] .portfolio-item:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background: var(--dark-bg);
@@ -159,6 +193,45 @@
             cursor: pointer;
         }
 
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 0.6rem;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            transition: left 0.3s ease;
+        }
+
+        .theme-toggle:hover::before {
+            left: 100%;
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px) rotate(10deg);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
+        }
+
         /* Language Toggle Button */
         .language-toggle {
             background: var(--gradient);
@@ -170,7 +243,7 @@
             font-size: 0.9rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-left: 1rem;
+            margin-left: 0.5rem;
             position: relative;
             overflow: hidden;
         }
@@ -205,9 +278,14 @@
             flex-direction: row-reverse;
         }
 
-        [dir="rtl"] .language-toggle {
+        [dir="rtl"] .theme-toggle {
             margin-left: 0;
             margin-right: 1rem;
+        }
+
+        [dir="rtl"] .language-toggle {
+            margin-left: 0;
+            margin-right: 0.5rem;
         }
 
         [dir="rtl"] .hero-content {
@@ -930,6 +1008,9 @@
                 <li><a href="#about" data-en="About" data-ar="من نحن">About</a></li>
                 <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
             </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
             <button class="language-toggle" onclick="toggleLanguage()">
                 <span class="lang-text" data-en="العربية" data-ar="English">العربية</span>
             </button>
@@ -1596,7 +1677,49 @@
         // Load saved language preference on page load
         document.addEventListener('DOMContentLoaded', function() {
             loadLanguagePreference();
+            loadThemePreference();
         });
+
+        // Theme Toggle Functionality
+        let currentTheme = 'dark'; // Default theme
+
+        function toggleTheme() {
+            currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            updateTheme();
+            saveThemePreference();
+        }
+
+        function updateTheme() {
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (currentTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fas fa-moon';
+            }
+
+            // Add smooth transition for theme change
+            document.body.style.transition = 'all 0.3s ease';
+            
+            // Trigger reflow for smooth animation
+            setTimeout(() => {
+                document.body.style.transition = '';
+            }, 300);
+        }
+
+        function saveThemePreference() {
+            localStorage.setItem('preferredTheme', currentTheme);
+        }
+
+        function loadThemePreference() {
+            const savedTheme = localStorage.getItem('preferredTheme');
+            if (savedTheme) {
+                currentTheme = savedTheme;
+                updateTheme();
+            }
+        }
     </script>
 
     <style>
@@ -1625,6 +1748,18 @@
 
         /* Enhanced mobile responsiveness */
         @media (max-width: 768px) {
+            .theme-toggle {
+                width: 40px;
+                height: 40px;
+                margin-left: 0.5rem;
+            }
+
+            .language-toggle {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+            }
+
             .nav-links {
                 position: fixed;
                 top: 70px;
@@ -1635,6 +1770,11 @@
                 padding: 2rem;
                 backdrop-filter: blur(20px);
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            [data-theme="light"] .nav-links {
+                background: rgba(255, 255, 255, 0.98);
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
             }
 
             .nav-links li {
